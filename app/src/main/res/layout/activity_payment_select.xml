@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context=".PaymentSelectActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/back3"
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:onClick="goPayment"
+            app:srcCompat="@drawable/back_arrow" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/receiverCountryC"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center|right"
+                android:text="@string/receiverCountry"
+                android:textColor="#0008FF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="left"
+                android:text="You'll be paying in total"
+                android:textColor="#5B5B5B"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/amountTobePay"
+                android:layout_width="fill_parent"
+                android:layout_height="39dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="left"
+                android:text="GHC 750.00"
+                android:textColor="@color/blueNoworri"
+                android:textSize="17sp" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="155dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="left"
+                android:text="Receiver's Mobile Wallet"
+                android:textColor="#5B5B5B"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/receiverNumberP"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="left"
+                android:text="025789653221"
+                android:textColor="@color/blueNoworri"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="40dp">
+
+            <!--  Password Label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:text="Select your Payment method"
+                android:textColor="#0F0F0F"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/chooseVisa2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_back"
+                android:onClick="addCard"
+                app:srcCompat="@drawable/visa" />
+
+            <ImageButton
+                android:id="@+id/chooseVisa"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_back"
+                android:onClick="addCard"
+                app:srcCompat="@drawable/mastercard" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

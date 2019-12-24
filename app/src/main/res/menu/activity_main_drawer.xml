@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_pay"
+        android:title="@string/payment_options">
+        <menu>
+            <item
+                android:id="@+id/bank"
+                android:title="@string/bank_account"
+                />
+            <item
+                android:id="@+id/mobile"
+                android:title="@string/mobile_account" />
+            <item
+                android:id="@+id/card"
+                android:title="@string/visa_mastercard" />
+        </menu>
+    </item>
+    <item android:title="@string/password">
+        <menu>
+            <item
+                android:id="@+id/nav_passChg"
+                android:title="@string/change_passwords" />
+        </menu>
+    </item>
+    <group android:id="@+id/first">
+        <item
+            android:id="@+id/nav_telegram"
+            android:title="@string/telegram" />
+    </group>
+    <group android:id="@+id/second">
+        <item
+            android:id="@+id/nav_signOut"
+            android:title="@string/sign_out" />
+    </group>
+    <group android:id="@+id/third">
+        <item
+            android:id="@+id/nav_terms"
+            android:title="@string/terms_amp_conditions" />
+    </group>
+
+</menu>

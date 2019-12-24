@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PaymentActivity"
+    tools:showIn="@layout/activity_payment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/back3"
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:onClick="goContactSelect"
+            app:srcCompat="@drawable/back_arrow" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/receiverCountryP"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center|right"
+                android:text="@string/receiverCountry"
+                android:textColor="#0008FF"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="18dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/how_much_are_you_sending"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/layout_bg"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <EditText
+                    android:id="@+id/senderAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:ignore="NestedWeights" />
+
+                <ImageView
+                    android:id="@+id/senderCountryFlag"
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ghs" />
+
+                <TextView
+                    android:id="@+id/currencyS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="GHC"
+                    android:textColor="@color/blueNoworri" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:text="Current exchange rate : "
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/currency_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 GHC = 0.000458 NG"
+                android:textColor="@color/blueNoworri"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="18dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/the_receiver_will_get"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/layout_bg"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <EditText
+                android:id="@+id/receiverAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                tools:ignore="NestedWeights" />
+
+            <ImageView
+                android:id="@+id/receiverCountryFlag"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ngn" />
+
+            <TextView
+                android:id="@+id/currencyR"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="@string/ng"
+                android:textColor="@color/blueNoworri" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginRight="18dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/transaction_cost"
+            android:textSize="15sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="GHC "
+                android:textColor="#5662FE"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/fees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="45.00"
+                android:textColor="#5662FE"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="18dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Delivery Times"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/deliveryTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="18dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Instance"
+            android:textColor="@color/blueNoworri"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/buttonCoupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginRight="18dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/enter_coupon"
+            android:textColor="@color/blueNoworri"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical">
+
+            <!--  Password Label -->
+            <Button
+                android:id="@+id/btn_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueNoworri"
+                android:onClick="goPay"
+                android:text="Continue"
+                android:textColor="@color/backnav" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

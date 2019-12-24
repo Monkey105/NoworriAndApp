@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CodeVerifActivity"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingTop="90dp"
+            android:paddingRight="24dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/verification_code"
+                android:textSize="36sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/enter_your_code_here"
+                android:fontFamily="@font/poppins_light"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/number1"
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/codeHint"
+                    android:inputType="number|numberPassword"
+                    android:maxLength="1"
+                    android:textSize="30sp"
+                    android:focusable="true" />
+
+                <EditText
+                    android:id="@+id/number2"
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/codeHint"
+                    android:inputType="number|numberPassword"
+                    android:maxLength="1"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/number3"
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/codeHint"
+                    android:inputType="number|numberPassword"
+                    android:maxLength="1"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/number4"
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/codeHint"
+                    android:inputType="number|numberPassword"
+                    android:maxLength="1"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <!--  Password Label -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="40dp">
+
+            <Button
+                android:id="@+id/btn_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:background="@color/blueNoworri"
+                android:padding="12dp"
+                android:text="@string/verify_now"
+                android:onClick="goHome"
+                android:textColor="@color/backnav" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Resend Code"
+                android:textAllCaps="@color/blueNoworri"
+                android:textColor="@color/blueNoworri"
+                android:textColorHint="@color/blueNoworri"
+                android:textSize="16sp"
+                app:fontFamily="@font/poppins_bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#5662FE</color>
+    <color name="colorAccent">#5662FE</color>
+    <color name="backnav">#FFFFFF</color>
+    <color name="drawerItem">#EEEEEE</color>
+    <color name="blueNoworri">#5662FE</color>
+    <color name="blueNoworriDark">#5662FE</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="danger">#ff0000</color>
+</resources>

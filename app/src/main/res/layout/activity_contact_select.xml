@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ContactSelectActivity"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/back2"
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:onClick="goReceiverCountry"
+            app:srcCompat="@drawable/back_arrow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingRight="20dp">
+
+
+
+            <TextView
+                android:id="@+id/receiverCountry"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center|right"
+                android:text="@string/receiverCountry"
+                android:textColor="#0008FF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center|left"
+                android:text="@string/select_"
+                android:textColor="#5B5B5B"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="60dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/layout_button_network"
+                    app:srcCompat="@drawable/mtn" />
+
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="60dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/layout_button_network"
+                    app:srcCompat="@drawable/airtel" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="60dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/layout_button_network"
+                    app:srcCompat="@drawable/vodafone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/layout_bg"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/receiverNumber"
+                    android:layout_width="242dp"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:inputType="phone" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/contactT"
+                    android:textColor="#0008FF"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:onClick="selectContact"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="290dp">
+
+            <!--  Password Label -->
+            <Button
+                android:id="@+id/btn_nextToNetwork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blueNoworri"
+                android:padding="12dp"
+                android:text="@string/next"
+                android:onClick="goPayment"
+                android:textColor="@color/backnav" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
